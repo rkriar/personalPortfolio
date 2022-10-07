@@ -18,10 +18,9 @@ export default function Hero() {
                   👋
                 </span>
               </h1>
-              <h1>Hi. I'm Umiko</h1>
+              <h1>Hi. I'm Ramneek Riar</h1>
               <p>
-                I work as a software developer at a game company. Will you be my
-                airsoft buddy?
+                I'm a 3rd year computer science student at Toronto Metropolitan University.
               </p>
               <Link
                 to="content"
@@ -41,12 +40,12 @@ export default function Hero() {
                 <div className="card-body">
                   <div className="icon">
                     <Image
-                      fileName="photo.jpg"
+                      fileName="Student_id3.jpg"
                       style={{ width: "5rem", height: "5rem" }}
                       alt="Hero Icon"
                     />
                   </div>
-                  <h3 className="card-title">@umikokommando</h3>
+                  <h3 className="card-title">@rkriar</h3>
                   <h4>
                     <span
                       className="mr-1"
@@ -56,7 +55,7 @@ export default function Hero() {
                     >
                       📍
                     </span>
-                    Tokyo
+                    Toronto
                     <br />
                   </h4>
                   <p className="card-text">

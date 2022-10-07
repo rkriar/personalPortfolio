@@ -1,7 +1,8 @@
 import React from "react"
 
+import Resume from '../Data/Resume_Ramneek_Riar.pdf';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons"
 import {
   faTwitter,
   faGithub,
@@ -13,7 +14,7 @@ export default function Links() {
     <ul className="list-group list-group-horizontal">
       <li className="list-group-item">
         <a
-          href="mailto:emailName@gmail.com"
+          href="mailto:ramneek.kaur@ryerson.ca"
           target="_blank"
           rel="noreferrer"
           alt="email link"
@@ -23,7 +24,7 @@ export default function Links() {
       </li>
       <li className="list-group-item">
         <a
-          href="https://github.com/githubName"
+          href="https://github.com/rkriar"
           target="_blank"
           rel="noreferrer"
           alt="github link"
@@ -33,7 +34,7 @@ export default function Links() {
       </li>
       <li className="list-group-item">
         <a
-          href="https://linkedin.com/linkedInName"
+          href="https://linkedin.com/ramneekriar"
           target="_blank"
           rel="noreferrer"
           alt="linkedin link"
@@ -43,12 +44,12 @@ export default function Links() {
       </li>
       <li className="list-group-item">
         <a
-          href="https://twitter.com/twitterName"
+          href={Resume}
           target="_blank"
-          rel="noreferrer"
-          alt="twitter link"
+          without rel="noopener noreferrer"
+          alt="ramneek riar resume"
         >
-          <FontAwesomeIcon icon={faTwitter} />
+          <FontAwesomeIcon icon={faFile} />
         </a>
       </li>
     </ul>
