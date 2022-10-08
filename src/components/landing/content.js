@@ -41,27 +41,65 @@ export default class Content extends Component {
           <>
             <section className="content" id="content">
               <div className="container">
-                {/* + Job subsection */}
+                {/* + School subsection */}
                 <div className="subsection">
-                  <h2>
-                    <span className="dot"></span>What do I{" "}
-                    <span className="word">do</span>?
+                  <h2 className="mt-5">
+                    <span className="dot"></span>Education{" "}
+                    <span className="word"></span>
                   </h2>
 
                   <div className="card">
                     <div className="card-body">
                       <div className="card-title">
-                        <h3>Eagle Jump Co. Ltd.</h3>
+                        <h3>Toronto Metropolitan University</h3>
+                        <h4>
+                          <FontAwesomeIcon
+                            icon={faGraduationCap}
+                            className="mr-2"
+                          />
+                          Computer Science
+                        </h4>
+                        <h4>
+                          <FontAwesomeIcon
+                            icon={faUserGraduate}
+                            className="mr-2"
+                          />{" "}
+                          May 2024
+                        </h4>
+                      </div>
+
+                      <div className="card-text">
+                        I earned my Bachelor's Degree in Computer Science in
+                        Tokyo Institute of Technology. For my undergraduate
+                        thesis, I wrote this model motion development through
+                        convolutional neural networks.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* - School subsection */}
+
+                {/* + Job subsection */}
+                <div className="subsection">
+                  <h2>
+                    <span className="dot"></span>Experience{" "}
+                    <span className="word"></span>
+                  </h2>
+
+                  <div className="card">
+                    <div className="card-body">
+                      <div className="card-title">
+                        <h3>BMO Financial Group</h3>
                         <h4>
                           <FontAwesomeIcon
                             icon={faBriefcase}
                             className="mr-2"
                           />{" "}
-                          Software Developer
+                          Quality Assurance Analyst Intern
                         </h4>
                         <h4>
                           <FontAwesomeIcon icon={faCalendar} className="mr-2" />{" "}
-                          Jun 2010 - Present
+                          May 2021 - December 2021
                         </h4>
                       </div>
 
@@ -80,8 +118,8 @@ export default class Content extends Component {
                 {/* + Technologies subsection */}
                 <div className="subsection">
                   <h2 className="mt-5">
-                    <span className="dot"></span>What do I{" "}
-                    <span className="word">know</span>?
+                    <span className="dot"></span>Technologies{" "}
+                    <span className="word"></span>
                   </h2>
                   <div className="row">
                     {data.allLanguagesJson.edges.map(({ node }, index) => (
@@ -103,49 +141,11 @@ export default class Content extends Component {
                 </div>
                 {/* - Technologies subsection */}
 
-                {/* + School subsection */}
-                <div className="subsection">
-                  <h2 className="mt-5">
-                    <span className="dot"></span>What did I{" "}
-                    <span className="word">study</span>?
-                  </h2>
-
-                  <div className="card">
-                    <div className="card-body">
-                      <div className="card-title">
-                        <h3>Tokyo Institute of Technology</h3>
-                        <h4>
-                          <FontAwesomeIcon
-                            icon={faGraduationCap}
-                            className="mr-2"
-                          />
-                          Computer Science
-                        </h4>
-                        <h4>
-                          <FontAwesomeIcon
-                            icon={faUserGraduate}
-                            className="mr-2"
-                          />{" "}
-                          Jan 2010
-                        </h4>
-                      </div>
-
-                      <div className="card-text">
-                        I earned my Bachelor's Degree in Computer Science in
-                        Tokyo Institute of Technology. For my undergraduate
-                        thesis, I wrote this model motion development through
-                        convolutional neural networks.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* - School subsection */}
-
                 {/* + Projects subsection */}
                 <div className="subsection">
                   <h2 className="mt-5">
-                    <span className="dot"></span>What have I{" "}
-                    <span className="word">experimented with</span>?
+                    <span className="dot"></span>Projects{" "}
+                    <span className="word"></span>
                   </h2>
                   <div className="row">
                     {data.allProjectsJson.edges.map(({ node }, index) => (

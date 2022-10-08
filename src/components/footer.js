@@ -2,14 +2,14 @@ import React, { Component } from "react"
 import { StaticQuery, graphql } from "gatsby"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faEnvelope, faArrowUp } from "@fortawesome/free-solid-svg-icons"
+import { faEnvelope, faArrowUp, faFile } from "@fortawesome/free-solid-svg-icons"
 import {
-  faTwitter,
   faGithub,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
 
 import { Link } from "react-scroll"
+import Resume from '../Data/Resume_Ramneek_Riar.pdf';
 
 export default class Footer extends Component {
   render() {
@@ -77,12 +77,12 @@ export default class Footer extends Component {
                     </li>
                     <li className="list-inline-item">
                       <a
-                        href="https://twitter.com/twitterName"
+                        href={Resume}
                         target="_blank"
-                        rel="noreferrer"
-                        alt="twitter link"
+                        without rel="noopener noreferrer"
+                        alt="ramneek riar resume"
                       >
-                        <FontAwesomeIcon icon={faTwitter} />
+                        <FontAwesomeIcon icon={faFile} />
                       </a>
                     </li>
                   </ul>
